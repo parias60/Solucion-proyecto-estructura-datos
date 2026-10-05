@@ -1,11 +1,11 @@
 # Solucion-proyecto-estructura-datos
 
-## Integrantes del proyecto:
-Pablo Daniel Arias Yucuma
-Samuel Alejandro Jaime Rodriguez
-Sergio Enrique Herrera Galvis
-Simón Peñaranda Fajardo
-Jose Santiago Dominguez Ortiz
+## Integrantes del proyecto
+- Pablo Daniel Arias Yucuma
+- Samuel Alejandro Jaime Rodriguez
+- Sergio Enrique Herrera Galvis
+- Simón Peñaranda Fajardo
+- Jose Santiago Dominguez Ortiz
 
 ### Lenguaje de programación: Java
 
@@ -15,10 +15,20 @@ La Universidad Nacional cuenta con residencias universitarias para apoyar a estu
 
 El sistema permitirá registrar estudiantes mediante su ID, nombre y puntaje socioeconómico, consultar y modificar su información, eliminarlos y mantenerlos ordenados según su puntaje. Además, permitirá administrar los cupos disponibles, asignarlos prioritariamente y consultar los estudiantes que obtuvieron una residencia y aquellos que permanecen en espera.
 
-# Decisiones de implementación:
+### Decisiones de implementación
 Lista doblemente enlazada para almacenar a los estudiantes ordenados por puntaje socioeconómico, permitiendo insertar y eliminar nodos sin desplazar elementos.
 Pila para almacenar las referencias a los últimos estudiantes registrados para implementar la función de deshacer en O(1).
 Cola circular para gestionar las solicitudes de mantenimiento en orden de llegada (FIFO), evitando desplazamientos de elementos.
 
-## Estructura del proyecto:
+## Estructura del proyecto
 
+La estructura actual del proyecto es preliminar y puede modificarse a medida que avance la implementación. Tenemos las siguientes clases definidas:
+
+```text
+├── ColaCircular
+├── Estudiante
+├── ListaDoble
+├── Main
+├── Nodo
+├── PilaUndo
+└── README.md
